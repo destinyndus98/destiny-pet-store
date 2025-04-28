@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Delivery Tracking Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .tracking-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .tracking-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #219a52;
+        }
+        .delivery-status {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .status-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .step {
+            text-align: center;
+            flex: 1;
+        }
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Package Delivery Tracking</h1>
+            <p>Track your package delivery status in real-time</p>
+        </div>
+
+        <div class="tracking-form">
+            <h2>Track Your Package</h2>
+            <input type="text" class="tracking-input" placeholder="Enter tracking number">
+            <button class="submit-btn">Track Package</button>
+        </div>
+
+        <div class="delivery-status">
+            <h2>Delivery Status</h2>
+            <div class="status-steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <p>Order Placed</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <p>Processing</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <p>In Transit</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <p>Delivered</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery-status">
+            <h2>Package Details</h2>
+            <p><strong>Tracking Number:</strong> <span id="tracking-number">-</span></p>
+            <p><strong>Origin:</strong> <span id="origin">-</span></p>
+            <p><strong>Destination:</strong> <span id="destination">-</span></p>
+            <p><strong>Estimated Delivery:</strong> <span id="estimated-delivery">-</span></p>
+            <p><strong>Current Status:</strong> <span id="current-status">-</span></p>
+        </div>
+    </div>
+</body>
+</html>
